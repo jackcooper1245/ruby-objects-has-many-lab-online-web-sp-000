@@ -12,8 +12,7 @@ attr_accessor :name
 
   def add_song(song)
       song.artist = self
-      @@song_count += 1
-    end
+  end
 
     def songs
       Song.all.select {|song| song.artist == self}
